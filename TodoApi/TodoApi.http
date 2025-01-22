@@ -1,4 +1,4 @@
-﻿//creates a variable that is used for all of the endpoints.
+//creates a variable that is used for all of the endpoints.
 @TodoApi_HostAddress = https://localhost:7011
 
 # defines a POST request.
@@ -23,7 +23,12 @@ GET {{TodoApi_HostAddress}}/todoitems
 GET {{TodoApi_HostAddress}}/todoitems/complete
 
 ###
-PUT {{TodoApi_HostAddress}}/todoitems/{id}
+PUT {{TodoApi_HostAddress}}/todoitems/1
+Content-Type: application/json
+{
+  "name": "feed fish",
+  "isComplete": false
+}
 
 ###
 
